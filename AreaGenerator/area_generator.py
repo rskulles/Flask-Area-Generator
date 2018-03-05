@@ -50,7 +50,7 @@ if not os.path.exists('{}api'.format(root_path)):
     print '...Directory not found. Creating it.'
     os.mkdir('./api', 2775)
 
-init_import_statement = 'from {} import  {}_area\n'.format(area_name, area_name)
+init_import_statement = 'from {} import {}_area\n'.format(area_name, area_name)
 
 if not os.path.exists('{}api/__init__.py'.format(root_path)):
     print '...Creating init file'
@@ -110,7 +110,6 @@ def read(json):
 
 def delete(json):
     pass
-
 """.format(db, collection, area_name, area_name, area_name)
 
 with open('{}api/{}.py'.format(root_path, area_name), "w") as area_file:
