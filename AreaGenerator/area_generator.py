@@ -81,30 +81,35 @@ collection = db['{}']
 
 {}_area = Blueprint('{}_area', __name__)
 
+
 @{}_area.route('/', methods=['POST'])
 def area_func():
-   json = request.json
-   action = json['action']
-   if action == 'create':
-      return create(json)
-   elif action == 'update':
-      return update(json)
-   elif action == 'read':
-      return read(json)
-   elif action == 'delete'
-      return delete(json)
+    json = request.json
+    action = json['action']
+    if action == 'create':
+        return create(json)
+    elif action == 'update':
+        return update(json)
+    elif action == 'read':
+        return read(json)
+    elif action == 'delete':
+        return delete(json)
+
 
 def create(json):
-   pass
+    pass
+
 
 def update(json):
-   pass
+    pass
+
 
 def read(json):
-   pass
+    pass
+
 
 def delete(json):
-   pass
+    pass
 
 """.format(db, collection, area_name, area_name, area_name)
 
